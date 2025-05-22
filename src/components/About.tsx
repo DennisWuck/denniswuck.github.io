@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { CheckCircle, Building2, Brain, Clock, Briefcase, BarChart } from 'lucide-react';
+import { CheckCircle, Building2, Brain, Clock, BarChart } from 'lucide-react';
 
 const About = () => {
   return (
@@ -52,22 +52,6 @@ const About = () => {
                 <div>
                   <h3 className="font-semibold text-inkaart-primary">Flexibel</h3>
                   <p className="text-sm">Snelle respons en persoonlijke aanpak</p>
-                </div>
-              </div>
-            </div>
-
-            <h2 className="text-2xl font-bold text-inkaart-primary mb-4">DIENSTVERLENING</h2>
-            <div className="grid grid-cols-1 gap-4 mb-8">
-              <div className="flex items-start gap-3">
-                <Briefcase className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-sm">
-                    • Financiële administratie en boekhouding<br />
-                    • Jaarrekeningen samenstellen<br />
-                    • Fiscale aangiften (OB, IB, LB en VPB)<br />
-                    • Financiële rapportages en analyses<br />
-                    • Begrotingen en prognoses
-                  </p>
                 </div>
               </div>
             </div>
