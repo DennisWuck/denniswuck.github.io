@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
@@ -33,12 +32,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <a href="#home" className="flex items-center">
-            <span className={`text-xl font-heading font-bold ${isScrolled ? 'text-inkaart-primary' : 'text-white'}`}>
-              InKaart
-            </span>
-            <span className={`ml-1 text-xl font-heading font-normal ${isScrolled ? 'text-inkaart-dark' : 'text-white'}`}>
-              Administraties
-            </span>
+            <img
+              src="/logo-green.svg"
+              alt="InKaart Administraties Logo"
+              className="h-14 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
