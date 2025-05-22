@@ -22,7 +22,14 @@ const About = () => {
           <div>
             <h2 className="text-3xl font-bold text-inkaart-primary mb-6">OVER INKAART</h2>
             <p className="text-inkaart-dark mb-6">
-              InKaart Administraties, opgericht door Dennis Wuck, is uw betrouwbare partner voor financiële dienstverlening. Met ruim 10 jaar ervaring in financiële administratie bieden wij professionele ondersteuning aan ZZP'ers en het MKB. Onze expertise strekt zich uit over diverse sectoren - van vastgoed en retail tot e-commerce en non-profit organisaties.
+              Welkom bij InKaart Administraties, het administratiekantoor van Dennis Wuck en uw betrouwbare partner voor financiële dienstverlening.
+              Met ruim 10 jaar ervaring bied ik professionele ondersteuning aan zzp'ers en het mkb, in sectoren als vastgoed, retail, groothandel, e-commerce, venture capitals en non-profitorganisaties.
+            </p>
+            <p className="text-inkaart-dark mb-6">
+              Bij InKaart Administraties staan persoonlijke aandacht en maatwerk centraal. Ik weet dat elke organisatie uniek is en stem mijn dienstverlening daarom volledig af op uw wensen en behoeften. Of het nu gaat om het verzorgen van uw administratie, het samenstellen van jaarrekeningen, het indienen van fiscale aangiften of het optimaliseren van financiële processen: u kunt rekenen op heldere rapportages en betrouwbare cijfers.
+            </p>
+            <p className="text-inkaart-dark mb-6">
+              Mijn passie is om financiële informatie inzichtelijk te maken, zodat u altijd precies weet waar u staat. Met een proactieve en flexibele aanpak denk ik graag met u mee over hoe uw administratie en financiële processen nóg beter kunnen.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
