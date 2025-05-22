@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { CheckCircle, Building2, Brain, Clock, Briefcase, BarChart } from 'lucide-react';
 
 const About = () => {
   return (
@@ -19,17 +20,67 @@ const About = () => {
           </div>
           
           <div>
-            <h2 className="text-3xl font-bold text-inkaart-primary mb-6">OVER ONS</h2>
+            <h2 className="text-3xl font-bold text-inkaart-primary mb-6">OVER INKAART</h2>
             <p className="text-inkaart-dark mb-6">
-              InKaart Administraties biedt professionele ondersteuning bij financiële administratie, rapportages, jaarrekeningen en fiscale aangiften voor zzp'ers en mkb. Met jarenlange ervaring in uiteenlopende sectoren – van vastgoed, detailhandel en venture capitals tot e-commerce en non-profit – leveren wij maatwerk en denken wij actief mee over het optimaliseren van uw financiële processen.
+              InKaart Administraties, opgericht door Dennis Wuck, is uw betrouwbare partner voor financiële dienstverlening. Met ruim 10 jaar ervaring in financiële administratie bieden wij professionele ondersteuning aan ZZP'ers en het MKB. Onze expertise strekt zich uit over diverse sectoren - van vastgoed en retail tot e-commerce en non-profit organisaties.
             </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-inkaart-primary">Expertise</h3>
+                  <p className="text-sm">Ruime ervaring in diverse sectoren en branches</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Building2 className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-inkaart-primary">MKB-focus</h3>
+                  <p className="text-sm">Specialisatie in ZZP'ers en MKB-bedrijven</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Brain className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-inkaart-primary">Proactief</h3>
+                  <p className="text-sm">Meedenken over procesoptimalisatie</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Clock className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold text-inkaart-primary">Flexibel</h3>
+                  <p className="text-sm">Snelle respons en persoonlijke aanpak</p>
+                </div>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-bold text-inkaart-primary mb-4">DIENSTVERLENING</h2>
+            <div className="grid grid-cols-1 gap-4 mb-8">
+              <div className="flex items-start gap-3">
+                <Briefcase className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-sm">
+                    • Financiële administratie en boekhouding<br />
+                    • Jaarrekeningen samenstellen<br />
+                    • Fiscale aangiften (OB, IB, LB en VPB)<br />
+                    • Financiële rapportages en analyses<br />
+                    • Begrotingen en prognoses
+                  </p>
+                </div>
+              </div>
+            </div>
             
             <div className="grid grid-cols-1 gap-4 mb-8">
-              <div>
-                <h3 className="font-bold text-inkaart-primary mb-2">Software kennis</h3>
-                <p className="text-sm">
-                  Exact Online, Snelstart, Afas, King, Elvy, E-boekhouden, Moneybird, Excel, Power BI en meer.
-                </p>
+              <div className="flex items-start gap-3">
+                <BarChart className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-inkaart-primary mb-2">Software expertise</h3>
+                  <p className="text-sm">
+                    Exact Online, Afas, Snelstart, King, Elvy, E-boekhouden, Moneybird, Excel, Power BI en meer.
+                  </p>
+                </div>
               </div>
             </div>
             
