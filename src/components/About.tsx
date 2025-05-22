@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { CheckCircle, Building2, Brain, Clock, BarChart } from 'lucide-react';
+import { BarChart } from 'lucide-react';
 
 const About = () => {
   return (
@@ -31,37 +31,6 @@ const About = () => {
             <p className="text-inkaart-dark mb-6">
               Mijn passie is om financiële informatie inzichtelijk te maken, zodat u altijd precies weet waar u staat. Met een proactieve en flexibele aanpak denk ik graag met u mee over hoe uw administratie en financiële processen nóg beter kunnen.
             </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-inkaart-primary">Expertise</h3>
-                  <p className="text-sm">Ruime ervaring in diverse sectoren en branches</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Building2 className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-inkaart-primary">MKB-focus</h3>
-                  <p className="text-sm">Specialisatie in ZZP'ers en MKB-bedrijven</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Brain className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-inkaart-primary">Proactief</h3>
-                  <p className="text-sm">Meedenken over procesoptimalisatie</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Clock className="w-6 h-6 text-inkaart-accent flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-inkaart-primary">Flexibel</h3>
-                  <p className="text-sm">Snelle respons en persoonlijke aanpak</p>
-                </div>
-              </div>
-            </div>
             
             <div className="grid grid-cols-1 gap-4 mb-8">
               <div className="flex items-start gap-3">
