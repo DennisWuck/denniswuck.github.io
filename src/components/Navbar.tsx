@@ -20,22 +20,30 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Over mij', href: '#about' },
-    { name: 'Diensten', href: '#services' },
-    { name: 'Ervaring', href: '#experience' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'HOME', href: '#home' },
+    { name: 'OVER ONS', href: '#about' },
+    { name: 'DIENSTEN', href: '#services' },
+    { name: 'ERVARING', href: '#experience' },
+    { name: 'CONTACT', href: '#contact' }
   ];
 
   return (
-    <nav className={`fixed w-full z-30 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav 
+      className={`
+        fixed w-full z-30 transition-all duration-300 
+        ${isScrolled 
+          ? 'bg-white shadow-md py-2' 
+          : 'bg-transparent py-4'
+        }
+      `}
+    >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <a href="#home" className="flex items-center">
             <img
-              src="/logo-green.svg"
+              src="/logo-black.svg"
               alt="InKaart Administraties Logo"
-              className="h-14 w-auto"
+              className="h-12 w-auto"
             />
           </a>
 
@@ -45,7 +53,13 @@ const Navbar = () => {
               <a 
                 key={link.name}
                 href={link.href}
-                className={`font-medium transition hover:text-inkaart-accent ${isScrolled ? 'text-inkaart-dark' : 'text-white'}`}
+                className={`
+                  font-medium text-sm tracking-wider transition-colors
+                  ${isScrolled 
+                    ? 'text-inkaart-dark hover:text-inkaart-primary' 
+                    : 'text-inkaart-dark hover:text-inkaart-primary'
+                  }
+                `}
               >
                 {link.name}
               </a>
@@ -58,7 +72,7 @@ const Navbar = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={isScrolled ? 'text-inkaart-primary' : 'text-white'}
+              className={isScrolled ? 'text-inkaart-primary' : 'text-inkaart-dark'}
             >
               <Menu />
             </Button>
@@ -67,14 +81,14 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 animate-fade-in">
-            <div className="flex flex-col space-y-3">
+          <div className="md:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg animate-fade-in">
+            <div className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="font-medium px-4 py-2 rounded hover:bg-inkaart-light text-inkaart-dark"
+                  className="font-medium text-sm tracking-wider px-4 py-2 hover:bg-inkaart-light text-inkaart-dark hover:text-inkaart-primary"
                 >
                   {link.name}
                 </a>

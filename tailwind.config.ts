@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Montserrat', 'system-ui', 'sans-serif'],
+				heading: ['Montserrat', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -53,6 +56,21 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				inkaart: {
+					primary: '#2E7D32',
+					secondary: '#4CAF50',
+					accent: '#1B5E20',
+					light: '#F5F5F5',
+					lighter: '#FAFAFA',
+					dark: '#333333',
+					gray: {
+						100: '#F5F5F5',
+						200: '#EEEEEE',
+						300: '#E0E0E0',
+						400: '#BDBDBD',
+						500: '#9E9E9E',
+					}
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -63,17 +81,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				inkaart: {
-					primary: '#1A365D',
-					secondary: '#2A5298',
-					accent: '#FF8A00',
-					light: '#F8F9FA',
-					dark: '#333333'
-				}
-			},
-			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				heading: ['Montserrat', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -123,6 +130,13 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
 				'fade-out': 'fade-out 0.5s ease-out'
+			},
+			spacing: {
+				'section': '6rem',
+				'header': '5rem',
+			},
+			boxShadow: {
+				'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
 			}
 		}
 	},
