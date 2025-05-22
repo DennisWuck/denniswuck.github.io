@@ -4,7 +4,13 @@ import {
   Calculator, 
   LineChart, 
   FileSpreadsheet, 
-  RefreshCcw 
+  RefreshCcw,
+  ClipboardCheck,
+  CalendarCheck,
+  FileSearch,
+  Network,
+  Scale,
+  Briefcase
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -24,6 +30,36 @@ const Services = () => {
       icon: <Calculator size={36} className="text-inkaart-primary" />,
       title: "FISCALE AANGIFTEN",
       description: "Verzorging van uw aangiften omzetbelasting, inkomstenbelasting, loonbelasting en vennootschapsbelasting."
+    },
+    {
+      icon: <ClipboardCheck size={36} className="text-inkaart-primary" />,
+      title: "CONTROLEWERKZAAMHEDEN",
+      description: "Wij voeren grondige controles uit op uw financiële administratie om de juistheid en volledigheid te waarborgen."
+    },
+    {
+      icon: <CalendarCheck size={36} className="text-inkaart-primary" />,
+      title: "MAAND- EN JAARAFSLUITINGEN",
+      description: "Het tijdig en nauwkeurig afsluiten van uw financiële periodes zodat u altijd over actuele en betrouwbare cijfers beschikt."
+    },
+    {
+      icon: <FileSearch size={36} className="text-inkaart-primary" />,
+      title: "ACCOUNT RECONCILIATIONS",
+      description: "Het controleren en afstemmen van grootboekrekeningen en subadministraties om afwijkingen vroegtijdig te signaleren."
+    },
+    {
+      icon: <Network size={36} className="text-inkaart-primary" />,
+      title: "INTERCOMPANY VERWERKING",
+      description: "Beheer en controle van onderlinge transacties binnen groepsverbanden, inclusief het opstellen van de juiste verantwoordingen."
+    },
+    {
+      icon: <Scale size={36} className="text-inkaart-primary" />,
+      title: "CONTROLE BALANSPOSTEN",
+      description: "Het controleren en analyseren van balansposten om een betrouwbaar financieel overzicht te garanderen."
+    },
+    {
+      icon: <Briefcase size={36} className="text-inkaart-primary" />,
+      title: "AUDIT ONDERSTEUNING",
+      description: "Wij bereiden uw administratie voor op de externe controle en ondersteunen tijdens de interim audit en de jaarafsluiting, zodat het proces soepel en efficiënt verloopt."
     },
     {
       icon: <LineChart size={36} className="text-inkaart-primary" />,
@@ -49,7 +85,7 @@ const Services = () => {
           <h2 className="text-3xl font-bold text-inkaart-primary mb-4">ONZE DIENSTEN</h2>
           <p className="text-lg text-inkaart-dark">
             InKaart Administraties biedt een compleet pakket aan financiële diensten 
-            voor ZZP'ers en MKB-bedrijven. Wat kan ik voor u betekenen?
+            voor ZZP'ers en MKB-bedrijven. Van dagelijkse administratie tot specialistische controlewerkzaamheden.
           </p>
         </div>
         
