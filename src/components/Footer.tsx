@@ -1,4 +1,3 @@
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -15,8 +14,8 @@ const Footer = () => {
               Uw administratie, jaarrekeningen en fiscale aangiften in vertrouwde handen.
             </p>
             <p className="text-gray-300">
-              KVK: [KVK-nummer]<br />
-              BTW: [BTW-nummer]
+              KVK: 83285032<br />
+              BTW: NL003799123B75
             </p>
           </div>
           
