@@ -1,18 +1,17 @@
-
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/components/ui/use-toast";
-import { Mail, Phone, User, MessageSquare } from "lucide-react";
+import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
+import { User, Mail, Phone, MessageSquare } from "lucide-react";
+import { toast } from "@/components/ui/use-toast";
 
 type FormData = {
   name: string;
   email: string;
-  phone: string;
+  phone?: string;
   message: string;
 };
 
@@ -25,17 +24,24 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      // Here you would normally send the data to a backend service
-      // For demo purposes we'll just simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      toast({
-        title: "Bericht verzonden!",
-        description: "Bedankt voor uw bericht. Ik neem zo snel mogelijk contact met u op.",
-        duration: 5000,
+      const response = await fetch("https://formspree.io/f/xbloevkn", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       });
-      
-      reset();
+
+      if (response.ok) {
+        toast({
+          title: "Bericht verzonden!",
+          description: "Bedankt voor uw bericht. Ik neem zo snel mogelijk contact met u op.",
+          duration: 5000,
+        });
+        reset();
+      } else {
+        throw new Error("Er ging iets mis bij het verzenden");
+      }
     } catch (error) {
       toast({
         title: "Er ging iets mis",
