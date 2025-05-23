@@ -2,15 +2,15 @@ import {
   BarChart3, 
   FileText, 
   Calculator, 
+  LineChart, 
+  FileSpreadsheet, 
+  RefreshCcw,
   ClipboardCheck,
   CalendarCheck,
-  FileSpreadsheet,
-  RefreshCcw,
-  Scale,
-  Briefcase,
   FileSearch,
-  Receipt,
-  Settings
+  Network,
+  Scale,
+  Briefcase
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -47,17 +47,17 @@ const Services = () => {
       description: "Voorbereiding en begeleiding bij interim- en eindejaarscontroles door de accountant, zodat het auditproces efficiënt en soepel verloopt."
     },
     {
-      icon: <FileSearch size={36} className="text-inkaart-primary" />,
+      icon: <FileSpreadsheet size={36} className="text-inkaart-primary" />,
+      title: "FACTURATIE, DEBITEUREN- EN CREDITEURENBEHEER",
+      description: "Het verzorgen van uw facturatie, het beheren van openstaande posten (debiteuren), het verwerken van binnenkomende facturen (crediteuren) en het voorbereiden of uitvoeren van betalingen. Zo houdt u grip op zowel uw inkomende als uitgaande geldstromen en optimaliseert u uw cashflow."
+    },
+    {
+      icon: <LineChart size={36} className="text-inkaart-primary" />,
       title: "FINANCIËLE RAPPORTAGES",
       description: "Heldere en overzichtelijke rapportages die inzicht geven in uw bedrijfsresultaten en financiële positie."
     },
     {
-      icon: <Receipt size={36} className="text-inkaart-primary" />,
-      title: "FACTURATIE EN DEBITEURENBEHEER",
-      description: "Het verzorgen van uw facturatie en het beheren van openstaande posten om uw cashflow te optimaliseren."
-    },
-    {
-      icon: <Settings size={36} className="text-inkaart-primary" />,
+      icon: <RefreshCcw size={36} className="text-inkaart-primary" />,
       title: "PROCESVERBETERING EN SOFTWAREADVIES",
       description: "Advies over het optimaliseren van administratieve processen en de inrichting van uw boekhoudsoftware."
     }
@@ -81,15 +81,11 @@ const Services = () => {
               className="group overflow-hidden hover:shadow-card transition-shadow duration-300 border-none bg-white"
             >
               <CardContent className="p-8">
-                <div className="mb-6">
+                <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold text-inkaart-primary mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-inkaart-dark">
-                  {service.description}
-                </p>
+                <h3 className="text-xl font-bold text-inkaart-primary mb-4">{service.title}</h3>
+                <p className="text-inkaart-dark">{service.description}</p>
               </CardContent>
             </Card>
           ))}
