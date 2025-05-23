@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <a href="#home" className="flex items-center">
             <img
-              src="/logo-black.svg"
+              src={isScrolled ? "/logo-black.svg" : "/logo-green.svg"}
               alt="InKaart Administraties Logo"
               className="h-12 w-auto"
             />
@@ -57,7 +57,7 @@ const Navbar = () => {
                   font-medium text-sm tracking-wider transition-colors
                   ${isScrolled 
                     ? 'text-inkaart-dark hover:text-inkaart-primary' 
-                    : 'text-inkaart-dark hover:text-inkaart-primary'
+                    : 'text-inkaart-primary hover:text-inkaart-accent'
                   }
                 `}
               >
@@ -72,7 +72,7 @@ const Navbar = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={isScrolled ? 'text-inkaart-primary' : 'text-inkaart-dark'}
+              className={isScrolled ? 'text-inkaart-primary' : 'text-inkaart-primary'}
             >
               <Menu />
             </Button>
