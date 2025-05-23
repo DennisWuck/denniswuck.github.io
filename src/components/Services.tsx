@@ -4,10 +4,13 @@ import {
   Calculator, 
   ClipboardCheck,
   CalendarCheck,
-  FileSearch,
   FileSpreadsheet,
   RefreshCcw,
-  LineChart
+  Scale,
+  Briefcase,
+  FileSearch,
+  Receipt,
+  Settings
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -16,12 +19,12 @@ const Services = () => {
     {
       icon: <BarChart3 size={36} className="text-inkaart-primary" />,
       title: "FINANCIËLE ADMINISTRATIE",
-      description: "Uw boekhouding wordt netjes en correct bijgehouden, zodat u altijd inzicht heeft in uw financiële situatie."
+      description: "Uw boekhouding wordt zorgvuldig en correct bijgehouden, zodat u altijd inzicht heeft in uw financiële situatie."
     },
     {
       icon: <FileText size={36} className="text-inkaart-primary" />,
-      title: "JAARREKENING",
-      description: "Het opstellen van jaarrekeningen voor eenmanszaken, VOF's en BV's volgens de geldende regelgeving."
+      title: "JAARREKENING EN BALANSDOSSIER",
+      description: "Het opstellen van jaarrekeningen voor eenmanszaken, VOF's en BV's, inclusief het opbouwen van een volledig onderbouwd balansdossier ter voorbereiding op controles en audits."
     },
     {
       icon: <Calculator size={36} className="text-inkaart-primary" />,
@@ -31,31 +34,31 @@ const Services = () => {
     {
       icon: <CalendarCheck size={36} className="text-inkaart-primary" />,
       title: "MAAND- EN JAARAFSLUITINGEN",
-      description: "Het tijdig en nauwkeurig afsluiten van financiële periodes, inclusief het controleren en reconciliëren van grootboekrekeningen, balansposten en intercompany-transacties."
+      description: "Het tijdig en nauwkeurig afsluiten van financiële periodes, inclusief controle en reconciliatie van grootboekrekeningen, balansposten en intercompany-transacties."
     },
     {
       icon: <ClipboardCheck size={36} className="text-inkaart-primary" />,
-      title: "CONTROLEWERKZAAMHEDEN & ACCOUNT RECONCILIATIONS",
+      title: "CONTROLEWERKZAAMHEDEN EN ACCOUNT RECONCILIATIONS",
       description: "Grondige controle van uw administratie en het afstemmen van rekeningen om afwijkingen vroegtijdig te signaleren en te corrigeren."
     },
     {
-      icon: <FileSearch size={36} className="text-inkaart-primary" />,
+      icon: <Briefcase size={36} className="text-inkaart-primary" />,
       title: "AUDITONDERSTEUNING",
-      description: "Voorbereiding en begeleiding bij interim- en eindejaarscontroles door de accountant, zodat het auditproces soepel verloopt."
+      description: "Voorbereiding en begeleiding bij interim- en eindejaarscontroles door de accountant, zodat het auditproces efficiënt en soepel verloopt."
     },
     {
-      icon: <LineChart size={36} className="text-inkaart-primary" />,
+      icon: <FileSearch size={36} className="text-inkaart-primary" />,
       title: "FINANCIËLE RAPPORTAGES",
       description: "Heldere en overzichtelijke rapportages die inzicht geven in uw bedrijfsresultaten en financiële positie."
     },
     {
-      icon: <FileSpreadsheet size={36} className="text-inkaart-primary" />,
-      title: "FACTURATIE & DEBITEURENBEHEER",
+      icon: <Receipt size={36} className="text-inkaart-primary" />,
+      title: "FACTURATIE EN DEBITEURENBEHEER",
       description: "Het verzorgen van uw facturatie en het beheren van openstaande posten om uw cashflow te optimaliseren."
     },
     {
-      icon: <RefreshCcw size={36} className="text-inkaart-primary" />,
-      title: "PROCESVERBETERING & SOFTWAREADVIES",
+      icon: <Settings size={36} className="text-inkaart-primary" />,
+      title: "PROCESVERBETERING EN SOFTWAREADVIES",
       description: "Advies over het optimaliseren van administratieve processen en de inrichting van uw boekhoudsoftware."
     }
   ];
@@ -78,10 +81,10 @@ const Services = () => {
               className="group overflow-hidden hover:shadow-card transition-shadow duration-300 border-none bg-white"
             >
               <CardContent className="p-8">
-                <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold text-inkaart-primary mb-4 tracking-wide">
+                <h3 className="text-xl font-bold text-inkaart-primary mb-3">
                   {service.title}
                 </h3>
                 <p className="text-inkaart-dark">
