@@ -15,7 +15,6 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-inkaart-accent rounded-lg"></div>
             </div>
           </div>
           
