@@ -5,7 +5,7 @@ const Hero = () => {
     <section id="home" className="relative bg-inkaart-light min-h-[80vh] flex items-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-inkaart-primary/5 to-inkaart-secondary/5"></div>
       <div 
-        className="absolute inset-0 flex items-center justify-center opacity-5"
+        className="absolute inset-0 flex items-center justify-center opacity-10 animate-pulse"
         aria-hidden="true"
       >
         <img

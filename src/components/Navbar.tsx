@@ -43,7 +43,7 @@ const Navbar = () => {
             <img
               src="/logo-green-black.svg"
               alt="InKaart Administraties Logo"
-              className="h-12 w-auto"
+              className="h-16 w-auto py-2 transition-transform duration-300 hover:scale-105"
             />
           </a>
 
