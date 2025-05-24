@@ -57,12 +57,12 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				inkaart: {
-					primary: '#2E7D32',
-					secondary: '#4CAF50',
-					accent: '#1B5E20',
+					primary: '#1B5E20',
+					secondary: '#2E7D32',
+					accent: '#004D40',
 					light: '#F5F5F5',
 					lighter: '#FAFAFA',
-					dark: '#333333',
+					dark: '#212121',
 					gray: {
 						100: '#F5F5F5',
 						200: '#EEEEEE',
