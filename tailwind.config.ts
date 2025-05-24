@@ -62,7 +62,7 @@ export default {
 					accent: '#1B5E20',
 					light: '#F5F5F5',
 					lighter: '#FAFAFA',
-					dark: '#1A1A1A',
+					dark: '#333333',
 					gray: {
 						100: '#F5F5F5',
 						200: '#EEEEEE',
