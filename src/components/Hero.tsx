@@ -9,7 +9,7 @@ const Hero = () => {
         aria-hidden="true"
       >
         <img
-          src="/logo-green-black.svg"
+          src="/logo-black.svg"
           alt=""
           className="w-auto h-[90vh] object-contain max-w-none"
           style={{ minWidth: '800px' }}

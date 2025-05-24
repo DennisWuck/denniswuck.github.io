@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <a href="#home" className="flex items-center">
             <img
-              src="/logo-green-black.svg"
+              src="/logo-black.svg"
               alt="InKaart Administraties Logo"
               className="h-12 w-auto"
             />
