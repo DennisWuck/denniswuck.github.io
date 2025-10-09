@@ -44,7 +44,14 @@ const Footer = () => {
             <p className="text-sm text-gray-400 mb-4 md:mb-0">
               &copy; {currentYear} InKaart Administraties. Alle rechten voorbehouden.
             </p>
-            <div>
+            <div className="flex flex-col md:flex-row gap-4">
+              <a 
+                href="/Algemene Voorwaarden.pdf"
+                download="Algemene Voorwaarden.pdf"
+                className="text-sm text-gray-400 hover:text-white transition-colors"
+              >
+                Algemene voorwaarden
+              </a>
               <a 
                 href="#home"
                 className="text-sm text-gray-400 hover:text-white transition-colors"
