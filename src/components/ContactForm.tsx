@@ -191,6 +191,35 @@ const ContactForm = () => {
             </Card>
           </div>
         </div>
+        
+        {/* Google Maps Section */}
+        <div className="mt-12">
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold text-inkaart-primary mb-4 text-center">
+              Onze locatie
+            </h3>
+            <div className="w-full h-96 rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.9428210018636!2d6.824443476914983!3d52.262583355255714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8119058d223b7%3A0x22f45cebdaeef3bb!2sFedde%20Schurerstraat%203%2C%207552%20MA%20Hengelo!5e0!3m2!1snl!2snl!4v1760039145798!5m2!1snl!2snl"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Locatie InKaart Administraties - Fedde Schurerstraat 3, 7552 MA Hengelo Ov"
+              ></iframe>
+            </div>
+            <div className="mt-4 text-center">
+              <p className="text-inkaart-dark">
+                <strong>Fedde Schurerstraat 3, 7552 MA Hengelo Ov</strong>
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                Klik op de kaart om de route te plannen
+              </p>
+            </div>
+          </Card>
+        </div>
       </div>
     </section>
   );
