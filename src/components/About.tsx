@@ -5,19 +5,7 @@ const About = () => {
   return (
     <section id="about" className="section bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="relative">
-              <div className="w-full h-[400px] bg-inkaart-secondary rounded-lg overflow-hidden">
-                <img
-                  src="over-inkaart.png"
-                  alt="Over InKaart – kantoor"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-          
+        <div className="grid gap-12">
           <div>
             <h2 className="text-3xl font-bold text-inkaart-primary mb-6">OVER INKAART</h2>
             <p className="text-inkaart-dark mb-6">
