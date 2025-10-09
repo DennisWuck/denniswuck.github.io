@@ -114,7 +114,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-inkaart-primary mb-1">Adres</h3>
-                    <p className="text-inkaart-dark">'t Swafert 2012<br />7552 ZD Hengelo (Ov)</p>
+                    <p className="text-inkaart-dark">Fedde Schurerstraat 3<br />7552 MA Hengelo Ov</p>
                   </div>
                 </div>
               </div>

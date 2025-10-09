@@ -23,8 +23,8 @@ const Footer = () => {
             <h3 className="font-heading text-lg font-bold mb-4">Contact</h3>
             <p className="text-gray-300 mb-2">
               Dennis Wuck<br />
-              't Swafert 2012<br />
-              7552 ZD Hengelo (Ov)
+              Fedde Schurerstraat 3<br />
+              7552 MA Hengelo Ov
             </p>
             <p className="mb-4">
               <a href="tel:0612407439" className="text-gray-300 hover:text-inkaart-accent transition-colors">
