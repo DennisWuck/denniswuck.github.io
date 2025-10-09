@@ -23,7 +23,6 @@ const Navbar = () => {
     { name: 'HOME', href: '#home' },
     { name: 'OVER ONS', href: '#about' },
     { name: 'DIENSTEN', href: '#services' },
-    { name: 'ERVARING', href: '#experience' },
     { name: 'CONTACT', href: '#contact' }
   ];
 
