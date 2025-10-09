@@ -10,7 +10,7 @@ const About = () => {
             <div className="relative">
               <div className="w-full h-[400px] bg-inkaart-secondary rounded-lg overflow-hidden">
                 <img
-                  src="/over-inkaart.png"
+                  src="over-inkaart.png"
                   alt="Over InKaart – kantoor"
                   className="w-full h-full object-cover"
                 />
