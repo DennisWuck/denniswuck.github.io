@@ -9,9 +9,9 @@ const About = () => {
           <div>
             <div className="relative">
               <div className="w-full h-[400px] bg-inkaart-secondary rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80" 
-                  alt="InKaart Team" 
+                <img
+                  src="/over-inkaart.jpg"
+                  alt="Over InKaart – kantoor"
                   className="w-full h-full object-cover"
                 />
               </div>
