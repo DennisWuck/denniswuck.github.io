@@ -74,7 +74,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-inkaart-primary mb-1">Dennis Wuck</h3>
-                    <p className="text-inkaart-dark">Financieel adviseur & Boekhouder</p>
+                    <p className="text-inkaart-dark">Financieel Controller & Boekhouder</p>
                   </div>
                 </div>
                 
